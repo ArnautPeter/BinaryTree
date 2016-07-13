@@ -47,11 +47,14 @@ public class CustomBinaryTree {
         }
     }
 
-    public void printTree() {
+    public void printTree(Node root) {
 
-        while (true) {
-
+        if (root != null) {
+            System.out.println(root.key + " " + root.value);
+            printTree(root.leftChild);
+            printTree(root.rightChild);
         }
+        return;
     }
 
     class Node {

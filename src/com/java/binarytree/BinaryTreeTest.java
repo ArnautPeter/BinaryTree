@@ -13,7 +13,9 @@ public class BinaryTreeTest {
         tree.addNode(12, "Cat");
         tree.addNode(7, "Cat");
 
-        String res = tree.findNode(4);
-        System.out.println(res);
+        //String res = tree.findNode(4);
+        //System.out.println(res);
+
+        tree.printTree(tree.root);
     }
 }
